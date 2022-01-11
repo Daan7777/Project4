@@ -1,0 +1,13 @@
+<script defer type="application/ld+json">
+    { 
+      "@context": "http://schema.org", 
+      "@type": "WebSite", 
+      "url": "{{ .Get "permalink" }}", 
+      "sameAs": [
+        "{{ .Site.Params.facebook }}", 
+        "{{ .Site.Params.github }}"
+      ], 
+      "name": "{{ .Get "title" }}", 
+      "logo": "" 
+    }
+  </script>
