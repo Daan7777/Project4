@@ -28245,6 +28245,24 @@ li a:hover:not(.active) {
   width: 25%;
 }
 
+/* Gold */
+
+.row:nth-child(1) {
+  background: gold;
+}
+
+/* Silver */
+
+.row:nth-child(2) {
+  background: #c0c0c0;
+}
+
+/* Bronze */
+
+.row:nth-child(3) {
+  background: #cd7f32;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
