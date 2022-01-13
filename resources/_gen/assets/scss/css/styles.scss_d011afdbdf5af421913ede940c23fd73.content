@@ -28245,6 +28245,18 @@ li a:hover:not(.active) {
   width: 25%;
 }
 
+.row:nth-child(1) {
+  background: gold;
+}
+
+.row:nth-child(2) {
+  background: #c0c0c0;
+}
+
+.row:nth-child(3) {
+  background: #cd7f32;
+}
+
 /* Gold */
 
 .row:nth-child(1) {
