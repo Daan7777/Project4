@@ -41,8 +41,16 @@ li a:hover:not(.active) {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10;
 }
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.content {
+  padding: 16px;
+}
+
 
 #container {
   width: 600px;
@@ -83,4 +91,11 @@ li a:hover:not(.active) {
 
 .row:nth-child(3) {
   background: #cd7f32;
+}
+
+.footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:45%;
 }
