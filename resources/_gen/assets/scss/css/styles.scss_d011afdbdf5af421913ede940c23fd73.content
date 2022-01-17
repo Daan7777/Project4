@@ -28231,8 +28231,13 @@ li a:hover:not(.active) {
   padding-top: 102px;
 }
 
-.content {
+#content {
   padding: 16px;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
 }
 
 #container {
