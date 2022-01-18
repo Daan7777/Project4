@@ -1,27 +1,15 @@
 {{ define "main" }}
-
-<script>
-  const settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "https://minecraft-server-status1.p.rapidapi.com/servers/single/full",
-    "method": "POST",
-    "headers": {
-      "content-type": "application/json",
-      "x-rapidapi-host": "minecraft-server-status1.p.rapidapi.com",
-      "x-rapidapi-key": "9b3d94fd5dmsh7a47ad0245605c6p1a2698jsnba06a2a5d08a"
-    },
-    "processData": false,
-    "data": {
-      "host": "mc.hypixel.net",
-      "port": 25565,
-      "type": "java",
-      "legacy": false
-    }
-  };
-  
-  $.ajax(settings).done(function (response) {
-    console.log(response);
-  });
-</script>
+<body>
+  <!-- Here a loader is created which 
+       loads till response comes -->
+  <div class="d-flex justify-content-center">
+      <div class="spinner-border" 
+           role="status" id="loading">
+          <span class="sr-only">Loading...</span>
+      </div>
+  </div>
+  <h1>Registered Employees</h1>
+  <!-- table for showing data -->
+  <table id="employees"></table>
+</body>
 {{ end }}
