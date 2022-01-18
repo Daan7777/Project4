@@ -1,47 +1,20 @@
-// api url
-const api_url = 
-"https://employeedetails.free.beeceptor.com/my/api/path";
-
-// Defining async function
-async function getapi(url) {
-
-// Storing response
-const response = await fetch(url);
-
-// Storing data in form of JSON
-var data = await response.json();
-console.log(data);
-if (response) {
-  hideloader();
-}
-show(data);
-}
-// Calling that async function
-getapi(api_url);
-
-// Function to hide the loader
-function hideloader() {
-document.getElementById('loading').style.display = 'none';
-}
-// Function to define innerHTML for HTML table
-function show(data) {
-let tab = 
-  `<tr>
-    <th>Name</th>
-    <th>Office</th>
-    <th>Position</th>
-    <th>Salary</th>
-   </tr>`;
-
-// Loop to access all rows 
-for (let r of data.list) {
-  tab += `<tr> 
-<td>${r.name} </td>
-<td>${r.office}</td>
-<td>${r.position}</td> 
-<td>${r.salary}</td>          
-</tr>`;
-}
-// Setting innerHTML as tab variable
-document.getElementById("employees").innerHTML = tab;
-}
+fetch("https://minecraft-server-status1.p.rapidapi.com/servers/single/full", {
+	"method": "POST",
+	"headers": {
+		"content-type": "application/json",
+		"x-rapidapi-host": "minecraft-server-status1.p.rapidapi.com",
+		"x-rapidapi-key": "9b3d94fd5dmsh7a47ad0245605c6p1a2698jsnba06a2a5d08a"
+	},
+	"body": {
+    "host": "mc.hypixel.net",
+    "port": 25565,
+    "type": "java",
+    "legacy": false
+  }
+})
+.then(response => {
+	console.log(response);
+})
+.catch(err => {
+	console.error(err);
+});
