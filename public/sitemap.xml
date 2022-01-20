@@ -2,11 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/</loc>
+    <loc>/contact/</loc>
+    <lastmod>2022-01-17T15:55:25+01:00</lastmod>
+  </url><url>
+    <loc>/corona/</loc>
+    <lastmod>2022-01-19T14:49:23+01:00</lastmod>
+  </url><url>
+    <loc>/board/</loc>
+    <lastmod>2022-01-14T15:35:26+01:00</lastmod>
+  </url><url>
+    <loc>/about/</loc>
+    <lastmod>2022-01-14T15:35:18+01:00</lastmod>
+  </url><url>
+    <loc>/</loc>
     <lastmod>2022-01-11T11:51:34+01:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>/tags/</loc>
   </url>
 </urlset>
