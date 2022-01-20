@@ -15,5 +15,8 @@
     "postcss-cli": "^9.1.0",
     "postcss-import": "^14.0.2",
     "tailwindcss": "^2.2.19"
+  },
+  "dependencies": {
+    "unirest": "^0.6.0"
   }
 }
