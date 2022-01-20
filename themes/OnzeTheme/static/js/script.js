@@ -1,20 +1,21 @@
-fetch("https://minecraft-server-status1.p.rapidapi.com/servers/single/full", {
-	"method": "POST",
-	"headers": {
-		"content-type": "application/json",
-		"x-rapidapi-host": "minecraft-server-status1.p.rapidapi.com",
-		"x-rapidapi-key": "9b3d94fd5dmsh7a47ad0245605c6p1a2698jsnba06a2a5d08a"
-	},
-	"body": {
-		"host": "mc.hypixel.net",
-		"port": 25565,
-		"type": "java",
-		"legacy": false
-	  }
-})
-.then(response => {
-	console.log(response);
-})
-.catch(err => {
-	console.error(err);
+var unirest = require("unirest");
+
+var req = unirest("POST", "https://minecraft-server-status1.p.rapidapi.com/servers/single/full/live");
+
+req.headers({
+	"content-type": "application/json",
+	"x-rapidapi-host": "minecraft-server-status1.p.rapidapi.com",
+	"x-rapidapi-key": "43fa1b0ac7mshb319b300365de5ap1a70ccjsnf784600171fb",
+	"useQueryString": true
+});
+
+req.type("json");
+req.send({
+	"host": "mc.hypixel.net"
+});
+
+req.end(function (res) {
+	if (res.error) throw new Error(res.error);
+
+	console.log(res.body);
 });
