@@ -1,11 +1,11 @@
 var unirest = require("unirest");
 
-var req = unirest("POST", "https://minecraft-server-status1.p.rapidapi.com/servers/single/full/live");
+var req = unirest("POST", "https://minecraft-server-status1.p.rapidapi.com/servers/single/lite");
 
 req.headers({
 	"content-type": "application/json",
 	"x-rapidapi-host": "minecraft-server-status1.p.rapidapi.com",
-	"x-rapidapi-key": "43fa1b0ac7mshb319b300365de5ap1a70ccjsnf784600171fb",
+	"x-rapidapi-key": "9b3d94fd5dmsh7a47ad0245605c6p1a2698jsnba06a2a5d08a",
 	"useQueryString": true
 });
 
