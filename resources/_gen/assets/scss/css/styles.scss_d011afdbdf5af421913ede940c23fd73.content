@@ -28289,6 +28289,28 @@ li a:hover:not(.active) {
   background: #3242cd;
 }
 
+.quoteContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 50px;
+  width: 80%;
+  border: 1px solid grey;
+  border-radius: 20px;
+}
+
+#quote {
+  font-family: "Bradley Hand ITC";
+  text-align: center;
+  font-size: 20px;
+}
+
+#author {
+  margin-top: 10px;
+  font-family: "Bradley Hand ITC";
+  font-size: 35px;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
