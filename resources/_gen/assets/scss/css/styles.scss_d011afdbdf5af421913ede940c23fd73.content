@@ -28289,26 +28289,86 @@ li a:hover:not(.active) {
   background: #3242cd;
 }
 
-.quoteContainer {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-  padding: 50px;
-  width: 80%;
-  border: 1px solid grey;
-  border-radius: 20px;
+body {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
-#quote {
-  font-family: "Bradley Hand ITC";
-  text-align: center;
-  font-size: 20px;
+.APIContainer {
+  margin: 50px auto 150px auto;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  width: 40%;
+  min-width: 500px;
+  height: 20%;
 }
 
-#author {
+.marginTopBottom {
   margin-top: 10px;
-  font-family: "Bradley Hand ITC";
-  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+/* Chuck Norris */
+
+.jokeContainer {
+  display: flex;
+  align-items: center;
+}
+
+.jokeTitle {
+  margin-left: 10px;
+}
+
+#joke {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+#buttonGetJoke {
+  margin-left: auto;
+}
+
+/* Currency */
+
+.currencyContainer {
+  display: flex;
+}
+
+.currencyInput {
+  display: flex;
+  margin: 20px 0 20px 0px;
+}
+
+.currencyResult {
+  margin: auto;
+}
+
+#buttonCurrency {
+  width: 100%;
+}
+
+/* COVID19 */
+
+.covidInput {
+  display: flex;
+  justify-content: center;
+  line-height: 2;
+}
+
+#countries {
+  margin-left: 20px;
+  width: 30%;
+}
+
+.mySeparator {
+  height: 0.5px;
+  width: 80%;
+  background-color: whitesmoke;
+}
+
+.a {
+  color: black;
 }
 
 @media (min-width: 640px) {
