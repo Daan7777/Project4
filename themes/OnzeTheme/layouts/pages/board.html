@@ -1,25 +1,20 @@
 {{ define "main" }}
-<script src="https://minecraft-server-status1.p.rapidapi.com/servers/single/full"></script>
+<!-- https://mcapi.us/ -->
+<div class="server-status">
+    My awesome server is currently <span class="server-online"></span>!
+</div>
+
+<script src="https://mcapi.us/scripts/minecraft.min.js"></script>
 <script>
-    fetch("", {
-        "method": "POST",
-        "headers": {
-            "content-type": "application/json",
-            "x-rapidapi-host": "minecraft-server-status1.p.rapidapi.com",
-            "x-rapidapi-key": "9b3d94fd5dmsh7a47ad0245605c6p1a2698jsnba06a2a5d08a"
-        },
-        "body": {
-        "host": "mc.hypixel.net",
-        "port": 25565,
-        "type": "java",
-        "legacy": false
+    MinecraftAPI.getServerStatus('s.nerd.nu', {
+        port: 25565 // optional, only if you need a custom port
+    }, function (err, status) {
+        if (err) {
+            return document.querySelector('.server-status').innerHTML = 'Error loading status';
         }
-    })
-    .then(response => {
-        console.log(response);
-    })
-    .catch(err => {
-        console.error(err);
+
+        // you can change these to your own message!
+        document.querySelector('.server-online').innerHTML = status.online ? 'up' : 'down';
     });
 </script>
 {{ end }}
